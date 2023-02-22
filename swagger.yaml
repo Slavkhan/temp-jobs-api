@@ -4,7 +4,7 @@ info:
   contact: {}
   version: '1.0'
 servers:
-  - url: https://temp-jobs-api-2h02.onrender.com
+  - url: https://temp-jobs-api-2h02.onrender.com/api/v1
     variables: {}
 paths:
   /auth/register:
@@ -104,7 +104,7 @@ paths:
       deprecated: false
       security:
         - bearer: []
-  /job/{id}:
+  /jobs/{id}:
     parameters:
       - in: path
         name: id
